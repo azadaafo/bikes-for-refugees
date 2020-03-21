@@ -95,6 +95,24 @@ button {
 	margin-bottom: 2em;
 }
 
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+	align-items: center;
+}
+
+.boxes div {
+	padding: 0 1em;
+	border: 1px solid;
+	width: 25%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: center;
+}
+
 .article__title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
@@ -139,3 +157,6 @@ button {
 	   max-height: 80px;
 	}
 }
+
+
+
