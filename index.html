@@ -18,7 +18,7 @@
 	</head>
 
 	<body>
-		<div class="header container">
+		<header class="header container">
 			<div class="navigation navbar navbar-toggleable-md navbar-light">
 				<button class="navigation__toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navigation__toggle-icon navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
 					<h1 class="sr-only">Bikes for Refugees Scotland - Providing donated bikes and accessories to refugees and asylum seekers.</h1>
 				</a>
 
-				<div class="navigation__content collapse navbar-collapse" id="navbarSupportedContent">
+				<nav class="navigation__content collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -44,9 +44,9 @@
 						</li>
 					</ul>
 					<button>Donate Now</button>
-				</div>
+				</nav>
 			</div>
-		</div>
+		</header> 
 
 		<div id="content" class="container">
 			<div class="alert">
@@ -61,14 +61,16 @@
 						<button>Donate a bike today</button>
 						<button>Volunteer</button>
 					</div>
+
 					<div class="boxes">  <!-- CONTAINER START -->
 						<div> Check availability </div>
 						<div> Donate bikes </div>
 						<div> Volunteer with us </div>
-					 </div> <!-- CONTAINER END -->
+					</div> <!-- CONTAINER END -->
+
 					<div>
 						<h2 class="heading-underline">Learn more</h2>
-
+						<div class="flex-container">
 							<article class="article">
 								<h6 class="article__title">
 									Why do refugees need bikes?
@@ -94,42 +96,56 @@
 									</a>
 								</p>
 							</article>
-
+						</div>
 					</div>
 				</div>
 
 				<div class="sidebar col-lg-4">
 						<h2 class="heading-underline">Upcoming events</h2>
-						<article class="article">
+
+						<!-- Each article has 2 columns.
+							 The image is in the 1st column.
+							 A header, and possibly a paragraph is in the 2nd column.
+						-->
+
+						<article class="article">							
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg" alt="">
-					  	</a>
-							<h6 class="article__title article__title--sidebar">
+								<img class="img-fluid" src="images/spring-fundraisers_thumbnail.jpg" alt="">
+							</a>							
+
+							<!-- 2nd column - the header and paragraph 
+								Add opening and closing tags to this column
+							-->
+							<div>  <!-- COLUMN START -->
+								<h6 class="article__title article__title--sidebar">
 								<a href="#">Join us for our Spring fundraisers</a>
-							</h6>
-							<p>Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
+								</h6>
+								<p>Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
+							</div>	<!-- COLUMN END -->
 						</article>
-						<article class="article">
+						<article class="article">						
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg" alt="">
-							</a>
+								<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg" alt="">
+							</a>						
 							<h6 class="article__title article__title--sidebar">
 								<a href="#">Bike dropoff event in Edinburgh on May 11</a>
 							</h6>
 						</article>
 						<article class="article">
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg" alt="">
+								<img class="img-fluid" src="images/edinburgh-damascus_thumbnail.png" alt="">
 							</a>
-							<h6 class="article__title article__title--sidebar">
-								<a href="#">Help us cycle 4,797km</a>
-							</h6>
-							<p>We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
+							<div>	<!-- COLUMN START -->
+								<h6 class="article__title article__title--sidebar">
+									<a href="#">Help us cycle 4,797km</a>
+								</h6>
+								<p>We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
+							</div>	<!-- COLUMN END -->
 						</article>
-							<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="facebook-link">
-								<span class="fa fa-facebook-square"></span>
-								All Facebook events
-							</a>
+						<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="facebook-link">
+							<span class="fa fa-facebook-square"></span>
+							All Facebook events
+						</a>
 				</div>
 			</div> <!-- end of row -->
 
